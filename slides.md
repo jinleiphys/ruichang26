@@ -688,8 +688,6 @@ class: text-center
 
 <div class="text-lg max-w-3xl mx-auto leading-relaxed mt-4">
 
-<v-clicks>
-
 **核心思路：** 将约化基模拟器与神经网络融合，构建全链路可微分的推断框架。NN学习势矩阵的SVD系数，保留Galerkin求解保证物理精度，JAX自动微分提供梯度。
 
 **关键指标：** 单次评估从 ~10 s 降至 ~1 ms（10<sup>4</sup>× 加速），梯度驱动的NUTS采样器仅需 ~10<sup>3</sup> 样本（替代随机游走的 10<sup>5</sup>），推断时间从 ~12 天缩短至 ~1 秒。
@@ -697,8 +695,6 @@ class: text-center
 **首个应用：** d+<sup>58</sup>Ni 弹性散射的18参数光学势贝叶斯推断，从实验数据提取完整后验分布。
 
 **更广视角：** DREAM是一个通用框架，可扩展至耦合道(CC)、R-matrix、DWBA等任何参数化线性系统 M(Ω)c = b。
-
-</v-clicks>
 
 </div>
 
